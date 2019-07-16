@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2019/4/13 16:48
-# @Author  : MengnanChen
+# @Author  : Anyue
 # @FileName: basic_model.py
 # @Software: PyCharm
 
