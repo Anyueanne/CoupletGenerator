@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2019/4/13 17:22
-# @Author  : MengnanChen
+# @Author  : Anyue
 # @FileName: predict.py
 # @Software: PyCharm
 
