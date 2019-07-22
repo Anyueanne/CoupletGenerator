@@ -32,6 +32,7 @@ with open('data/couplet.txt', 'rb') as fin, \
         try:
             line = line.decode('utf-8').strip('\r\n\u3000 ')
             source, target = line.split(' ')
+            #将上下联分开
             fout_source.write('{}\n'.format(source).encode('utf-8'))
             fout_target.write('{}\n'.format(target).encode('utf-8'))
         except Exception as e:
@@ -53,6 +54,7 @@ def extract_character_vocab(data):
     :param data:
     :return:
     '''
+    #取单字、去重并给每个字加上编号
     special_words = ['<PAD>', '<UNK>', '<GO>', '<EOS>']
     set_words = list(set([character for line in data.split('\n') for character in line]))
     int_to_vocab = {idx: word for idx, word in enumerate(special_words + set_words)}
